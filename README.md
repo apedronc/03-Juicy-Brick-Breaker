@@ -1,2 +1,13 @@
 # 03-Juicy-Brick-Breaker
-Juicy Brick Breaker project
+Context and date
+
+Description
+
+## Implementation
+Which features you included
+
+## References
+
+## Future Development
+
+## Created by
