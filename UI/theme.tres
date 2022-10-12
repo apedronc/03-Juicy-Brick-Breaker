@@ -1,0 +1,29 @@
+[gd_resource type="Theme" load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Manga-4vx6.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.835294, 0.611765, 0.784314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 1 )
+
+[resource]
+Button/fonts/font = SubResource( 1 )
+Button/styles/disabled = SubResource( 2 )
+Button/styles/focus = SubResource( 3 )
+Button/styles/hover = SubResource( 4 )
+Button/styles/normal = SubResource( 5 )
+Button/styles/pressed = SubResource( 6 )
+Label/fonts/font = SubResource( 7 )
