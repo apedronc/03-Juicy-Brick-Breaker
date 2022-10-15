@@ -5,6 +5,8 @@ export var speed = 10.0
 var width = 0
 var width_default = 0
 var decay = 0.02
+export var time_highlight = 0.4
+export var time_highlight_size = 0.3
 
 func _ready():
 	width = $CollisionShape2D.get_shape().get_extents().x
@@ -26,6 +28,9 @@ func hit(_ball):
 	if paddle_sound != null:
 		paddle_sound.play()
 	$Energy.emitting = true
+	$Tween.interpolate_property($Images/Highlight, "modulate:a", 1.0, 0.0, time_highlight, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	$Tween.interpolate_property($Images/Highlight, "scale", Vector2(2.0,2.0), Vector2(1.0,1.0), time_highlight_size, Tween.TRANS_BOUNCE, Tween.EASE_IN)
+	$Tween.start()
 
 func powerup(payload):
 	for c in $Powerups.get_children():
